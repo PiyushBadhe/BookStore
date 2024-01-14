@@ -10,7 +10,7 @@ app.use('/books', bookRoutes);
 app.use(express.json());
 
 app.use(cors({
-    origin: 'http://localhost:5555',
+    origin: `http://localhost:${PORT}`,
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type'],
 }));
